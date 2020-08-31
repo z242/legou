@@ -1,0 +1,197 @@
+html,body{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+/* 1.头部 */
+.header{
+    display: flex;
+    line-height: 40px;
+    justify-content: space-between;
+    font-size: 16px;
+    padding:0 0 0 10px;
+    border-bottom:1px solid #ddd;
+}
+.header span{
+    color: #000;
+}
+.header p{
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/* 2.主体 */
+.main{
+    flex: 1;
+
+    overflow-y: scroll;
+
+    font-size: 16px;
+}
+.main .self{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+/* 复选框 */
+.choose input{
+    display: none;
+}
+.choose input:checked+span{
+    background-color: #E43130;
+}
+.choose span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 16px;
+}
+/* 更多 */
+.main .more{
+    flex: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+    position: relative;
+}
+.main .more .phone{
+    flex: 3;
+}
+.main .more img{
+    width: 100%;
+}
+.main .more .msg{
+    flex: 7;
+
+}
+.main .more .msg h3{
+    font-weight: normal;
+    white-space: nowrap;
+}
+.main .more .msg p{
+    color: #999BA1;
+    font-size: 12px;
+    margin: 5px 0;
+}
+.main .more .price{
+    display: flex;
+    justify-content: space-between;
+}
+.main .more .price p{
+    color: #E43130;
+    font-size: 14px;
+    font-weight: bold;
+}
+.main .more .num{
+    display: flex;
+
+    justify-content: space-between;
+
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.main .more .num span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #666;
+    text-align: center;
+    line-height: 20px;
+    flex: 1;
+}
+.main .more .num input{
+    width: 30px;
+    height: 20px;
+    border: none;
+    outline: none;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+/* 固定结算 */
+.pay{
+    display: flex;
+    font-size: 16px;
+
+    align-items: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.pay .all{
+    flex:1;
+    text-align: center;
+}
+.pay .all span{
+    color: #E43130;
+}
+.pay button{
+    padding: 0 10px;
+    line-height: 35px;
+    outline: none;
+    border: none;
+    background-color: #E43130;
+    color: #fff;
+}
+.check{
+    display: flex;
+}
+.check .choose{
+    margin: 0 5px;
+}
+
+
+
+/* 底线 */
+.endLine{
+    padding: 0 5px 10px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+.endLine div{
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+.endLine p{
+    padding:0 10px;
+    font-size: 12px;
+}
+
+/* 3.底部 */
+.footer{
+    background-color: #fff;
+}
+.footer ul{
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.footer ul li a.active{
+    color: #E43130;
+}
+.footer ul a{
+    color: #8d8d8d;
+}
+.footer ul a span{
+    font-size: 12px;
+}

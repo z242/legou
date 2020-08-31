@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>legou-app-搜索</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="lib/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+
+<body>
+    <!-- 1.头部 -->
+    <div class="header">
+        <span class="iconfont icon-arrow-left" id="return"></span>
+        <div>
+            <input type="search" placeholder="程序员假发" id="msg">
+            <span class="iconfont icon-sousuo"></span>
+        </div>
+        <button type="button" id="btn">搜索</button>
+    </div>
+
+    <!-- 2.主体 -->
+    <div class="main">
+        <!-- 最新搜索 -->
+        <div class="new_search">
+            <p>最新搜索</p>
+            <span class="iconfont icon-shanchu" id="del"></span>
+        </div>
+        <!-- 搜索列表 -->
+        <ul class="search_lists" id="List">
+            
+        </ul>
+    </div>
+    
+
+
+
+    <!-- 引入js样式 -->
+    <script src="./lib/jquery/jquery3.5.js"></script>
+
+    <script src="./js/common.js"></script>
+
+    <script src="./js/search.js"></script>
+
+</body>
+
+</html>

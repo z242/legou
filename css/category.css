@@ -1,0 +1,133 @@
+html,body{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1.头部 */
+/* 1.头部 */
+.header{
+    height: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #f4f4f4;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.header span{
+    font-size: 16px;
+    color: #000;
+}
+.header div{
+    flex: 1;
+    position: relative;
+    margin: 0 10px;
+    line-height: 40px;
+}
+.header div span{
+    color: #ccc;
+
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.header input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 26px;
+    background-color: #f7f7f7;
+
+    text-indent: 30px;
+    border-radius: 13px;
+}
+
+/* 2.主体 */
+.main{
+    flex: 1;
+
+    display: flex;
+    overflow-y: scroll;
+
+    font-size: 14px;
+
+}
+/* 左边 */
+.left{
+    background-color: #f7f7f7;
+    
+}
+.left p{
+    line-height: 46px;
+    width: 80px;
+    text-align: center;
+}
+.left p a{
+    color: #000;
+    text-decoration: none;
+}
+.left p.active a{
+    display: inline-block;
+    /* line-height: 46px; */
+    width: 80px;
+    color: #E43130;
+    background-color: #fff;
+}
+/* 右边 */
+.right{
+    flex: 1;
+    overflow-y: scroll;
+    padding-bottom: 100px;
+}
+.hot ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.hot h3{
+    line-height: 46px;
+}
+.hot ul li{
+    width: 33%;
+}
+.hot ul li img{
+    width: 100%;
+}
+.hot ul li p{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 3.底部 */
+.footer{
+    background-color: #fff;
+}
+.footer ul{
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.footer ul li a.active{
+    color: #E43130;
+}
+.footer ul a{
+    color: #8d8d8d;
+}
+.footer ul a span{
+    font-size: 12px;
+}

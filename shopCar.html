@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>legou-app-搜索</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="lib/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/shopCar.css">
+</head>
+
+<body>
+    <!-- 1.头部 -->
+    <div class="header">
+        <span class="iconfont icon-arrow-left" id="return"></span>
+        <p>购物车</p>
+    </div>
+
+    <!-- 2.主体 -->
+    <div class="main">
+        <script>
+            for (let i = 0; i < 5; i++) {
+                document.write(`
+                <div class="self">
+                    <div class="choose choic">
+                        <label>
+                            <input type="checkbox">
+                            <span>√</span>
+                        </label>
+                        
+                    </div>
+                    <div class="more">
+                        <div class="phone">
+                            <img src="./images/shop-list-img01.webp" alt="">
+                        </div>
+                        <div class="msg">
+                            <h3>苹果iPad平板电脑</h3>
+                            <p>颜色分类：8GB+ 128GB版</p>
+                            <div class="price">
+                                <p>￥<span class='sp'>3268.00</span></p>
+                                <div class="num">
+                                    <span class='rec'>-</span>
+                                    <input type="text" value="1">
+                                    <span class='add'>+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                `)
+            }
+        </script>
+
+        <!-- 底线 -->
+        <div class="endLine">
+            <div></div>
+            <p>我也是有底线的</p>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- 固定结算 -->
+    <div class="pay">
+        <div class="check">
+            <div class="choose">
+                <label>
+                    <input type="checkbox"  id='allCheck'>
+                    <span>√</span>
+                </label>
+            </div>
+            <p>已经选（<span class="allNum">0</span>）</p>
+        </div>
+        <div class="all">
+            合计：￥<span>0.00</span>
+        </div>
+        <button type="button">去结算</button>
+    </div>
+
+    
+
+    <!-- 3.底部 -->
+    <div class="footer">
+        <ul>
+            <li>
+                <a href="./index.html">
+                    <span class="iconfont icon-ziyuan"></span>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="./category.html">
+                    <span class="iconfont icon-fenlei"></span>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="./shopCar.html" class="active">
+                    <span class="iconfont icon-gouwuche"></span>
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li>
+                <a href="./mycopy.html">
+                    <span class="iconfont icon-wode"></span>
+                    <p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    
+
+
+
+    <!-- 引入js样式 -->
+    <script src="./lib/jquery/jquery3.5.js"></script>
+
+    <script src="./js/common.js"></script>
+
+    <script src="./js/shopCar.js"></script>
+
+
+</body>
+
+</html>

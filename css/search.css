@@ -1,0 +1,87 @@
+html,body{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+/* 1.头部 */
+/* 1.头部 */
+.header{
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #f4f4f4;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.header span{
+    font-size: 16px;
+    color: #000;
+}
+.header div{
+    flex: 1;
+    position: relative;
+    margin: 0 10px;
+    line-height: 40px;
+}
+.header div span{
+    color: #ccc;
+
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.header input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 26px;
+    background-color: #f7f7f7;
+
+    text-indent: 30px;
+    border-radius: 13px;
+}
+.header button{
+    border: none;
+    outline: none;
+    background-color: #E43130;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+/* 2.主体 */
+.main{
+    flex: 1;
+
+    overflow-y: scroll;
+
+    font-size: 14px;
+}
+
+/* 最新搜索 */
+.new_search{
+    background-color: #fff;
+    display: flex;
+    line-height: 60px;
+    justify-content: space-between;
+    padding:10px;
+    font-size: 16px;
+}
+.search_lists{
+    padding: 20px 30px;
+
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+.search_lists li{
+    padding: 5px 8px;
+    background-color: #F0F2F5;
+    color: #686868;
+    margin:0 5px 5px 0;
+}
